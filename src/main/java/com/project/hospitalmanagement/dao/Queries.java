@@ -15,6 +15,6 @@ public class Queries {
 	
 	public static final String GET_ALL_PATIENT_DETAILS = "select patient_id, name, age, room, doctor_name, expenses, status, created_at from patient";
 	
-	public static final String MARK_PATIENT_DISCHARGED = "update patient set status = 2 where patient_id = ?";
+	public static final String MARK_PATIENT_DISCHARGED = "update patient set status = 2, updated_at = now() where patient_id = ?";
 
 }

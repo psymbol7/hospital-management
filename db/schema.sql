@@ -10,6 +10,7 @@ create table staff (
 	updated_at timestamp default now(),
 	constraint staff_pkey primary key (staff_id)
 );
+create index user_name_index on staff(user_name);
 
 drop table if exists patient cascade;
 create table patient (
