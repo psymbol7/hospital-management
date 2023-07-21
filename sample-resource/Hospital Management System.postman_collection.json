@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "6b6bc5f4-783a-405b-9fe8-950c0d27bc64",
+		"name": "Hospital Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17619832",
+		"_collection_link": "https://lunar-station-172810.postman.co/workspace/DangalGames~a6f5ef79-1d53-4482-8bea-bb34f18fc4b5/collection/17619832-6b6bc5f4-783a-405b-9fe8-950c0d27bc64?action=share&creator=17619832&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Signup Staff",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\": \"prateek\",\r\n    \"password\": \"Prateek@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3166/v1/staffs/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3166",
+					"path": [
+						"v1",
+						"staffs",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Staff Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\": \"prateek\",\r\n    \"password\": \"Prateek@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3166/v1/staffs/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3166",
+					"path": [
+						"v1",
+						"staffs",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rupin\",\r\n    \"age\": 20,\r\n    \"room\": 1,\r\n    \"doctor_name\": \"Dr. Sanjay Singh\",\r\n    \"expenses\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3166/v1/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3166",
+					"path": [
+						"v1",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Patients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3166/v1/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3166",
+					"path": [
+						"v1",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Discharge Patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3166/v1/patients/362ded25-b6f9-414b-8f55-67baaf0bcc28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3166",
+					"path": [
+						"v1",
+						"patients",
+						"362ded25-b6f9-414b-8f55-67baaf0bcc28"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
